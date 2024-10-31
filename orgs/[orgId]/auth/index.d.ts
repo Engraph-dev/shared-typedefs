@@ -40,3 +40,5 @@ export type VerifyEarlyAccessCodeBody = {
 export type DangerZoneBody = {
 	userPassword: string
 }
+
+export type LoginOrgUserBody = Pick<User, "userMail" | "userPassword">

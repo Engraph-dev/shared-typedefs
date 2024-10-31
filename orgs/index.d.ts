@@ -6,3 +6,5 @@ export type CreateOrgBody = Pick<Org, "orgName"> &
 export type GetOrgResponse = {
 	orgData: Org
 }
+
+export type CheckEmailBody = Pick<User, "userMail">
