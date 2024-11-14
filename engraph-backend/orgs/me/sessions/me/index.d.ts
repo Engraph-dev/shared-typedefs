@@ -1,8 +1,8 @@
-import { Session, type User } from "@prisma/client"
+import type { Session, User } from "@prisma/client"
 
-export type EndSessionParams = {
-	sessionId: Session["sessionId"]
-}
+export type SessionId = Pick<Session, "sessionId">
+
+export type EndSessionParams = SessionId
 
 export type GetSessionResponse =
 	| {

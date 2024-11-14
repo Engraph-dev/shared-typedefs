@@ -2,12 +2,7 @@ import type { OrgId } from ".."
 import type { Session, User, UserVerificationToken } from "@prisma/client"
 
 // Requests
-export type RegisterCredentialsParams = OrgId
-
-export type RegisterCredentialsBody = Pick<
-	User,
-	"userPassword" | "userMail" | "userFirstName" | "userLastName"
->
+export type LoginCredentialsParams = OrgId
 
 export type LoginCredentialsBody = {
 	userMail: User["userMail"]
