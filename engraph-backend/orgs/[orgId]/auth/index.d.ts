@@ -17,10 +17,7 @@ export type VerifyTokenBody = {
 // Responses
 
 export type CredentialsResponse = {
-	userData: Pick<
-		User,
-		"userId" | "userVerified" | "userEAEnabled" | "userProfileCompleted"
-	>
+	userData: Pick<User, "userId" | "userOrgId" | "userRole">
 	sessionData: {
 		sessionId: Session["sessionId"]
 		sessionToken: Session["sessionToken"]
