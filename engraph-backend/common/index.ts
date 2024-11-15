@@ -79,6 +79,9 @@ export type ResJSON<
 	| {
 			responseStatus: "ERR_METHOD_NOT_ALLOWED"
 	  }
+	| {
+			responseStatus: "ERR_TEAPOT"
+	  }
 
 export type ResponseStatus = ResJSON["responseStatus"]
 
