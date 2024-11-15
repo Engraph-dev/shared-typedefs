@@ -65,12 +65,6 @@ export type ResJSON<
 			responseStatus: "ERR_UNVERIFIED"
 	  }
 	| {
-			responseStatus: "ERR_EARLY_ACCESS"
-	  }
-	| {
-			responseStatus: "ERR_INCOMPLETE_PROFILE"
-	  }
-	| {
 			responseStatus: "ERR_UNAUTHORIZED"
 	  }
 	| {
