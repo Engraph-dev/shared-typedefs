@@ -1,7 +1,6 @@
 import type { CreateUserBody, CreateUserResponse } from ".."
+import type { MakeOptional } from "../../../../common"
 import type { User } from "@prisma/client"
-
-import type { MakeOptional } from "@/util/defs/engraph-backend/common"
 
 export type UserId = Pick<User, "userId">
 
