@@ -89,6 +89,14 @@ export const ErrorCodes = {
 	ObjectParamsInvalid: "E9007",
 	// Media Request ID is invalid
 	RequestIdInvalid: "E9008",
+	// Project ID is invalid
+	ProjectIdInvalid: "E9009",
+	// Project Quota Exceeded for Org Plan
+	ProjectQuotaExceeded: "E9010",
+	// User Quota Exceeded for Org Plan
+	UserQuotaExceeded: "E9011",
+	// Project Access Missing
+	ProjectAccessMissing: "E9012",
 
 	// Unknown error
 	Unknown: "E9999",

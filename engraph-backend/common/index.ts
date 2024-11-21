@@ -37,7 +37,7 @@ export type InvalidParam<
 	  }
 ) & {
 	errorCode: ErrorCode
-	errorArgs?: any
+	errorArgs: any
 }
 
 export type ParamType = InvalidParam["paramType"]
