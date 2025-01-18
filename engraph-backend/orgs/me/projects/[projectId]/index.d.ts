@@ -10,3 +10,5 @@ export type UpdateProjectBody = MakeOptional<
 >
 
 export type DeleteProjectParams = ProjectId
+
+export type GetProjectParams = ProjectId
