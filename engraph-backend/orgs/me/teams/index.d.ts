@@ -1,5 +1,5 @@
-import type { PagedQuery } from "../../common"
-import type { MiniUser } from "../../common/users"
+import type { PagedQuery } from "../../../common"
+import type { MiniUser } from "../../../common/users"
 import type { Team } from "@prisma/client"
 
 export type TeamId = Pick<Team, "teamId">

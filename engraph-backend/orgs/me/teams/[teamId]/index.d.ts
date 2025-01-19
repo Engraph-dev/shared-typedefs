@@ -1,5 +1,5 @@
 import type { TeamId, TeamResponse } from ".."
-import type { MakeOptional } from "../../../common"
+import type { MakeOptional } from "../../../../common"
 import type { Team } from "@prisma/client"
 
 export type UpdateTeamParams = TeamId
