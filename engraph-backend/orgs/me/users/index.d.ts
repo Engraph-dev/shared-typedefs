@@ -1,4 +1,5 @@
 import type { PagedQuery } from "../../../common"
+import type { MiniUser } from "../../../common/users"
 import type { User } from "@prisma/client"
 
 export type CreateUserBody = Omit<User, "userOrgId" | "userId" | "userVerified">
