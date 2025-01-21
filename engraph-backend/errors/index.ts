@@ -99,6 +99,8 @@ export const ErrorCodes = {
 	TeamQuotaExceeded: "E9012",
 	// Project Access Missing
 	ProjectAccessMissing: "E9013",
+	// Workflow Id is invalid
+	WorkflowIdInvalid: "E9014",
 
 	// Unknown error
 	Unknown: "E9999",
