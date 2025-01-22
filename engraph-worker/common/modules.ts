@@ -5,3 +5,7 @@ export type Module = {
 	moduleEmbeddings?: number[]
 	moduleSummary?: string
 }
+
+export type ExternalModule = {
+	modulePath: string
+}

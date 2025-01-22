@@ -19,3 +19,8 @@ export type Symbol = {
 	symbolEmbeddings?: number[]
 	symbolSummary?: string
 }
+
+export type ExternalSymbol = {
+	symbolIdentifier: string
+	symbolPath: string
+}
