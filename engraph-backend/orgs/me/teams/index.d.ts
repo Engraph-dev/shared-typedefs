@@ -1,4 +1,8 @@
-import type { PagedQuery } from "../../../common"
+import type {
+	ExtendPagedQuery,
+	MakeOptional,
+	PagedQuery,
+} from "../../../common"
 import type { MiniUser } from "../../../common/users"
 import type { Team } from "@prisma/client"
 
@@ -16,8 +20,15 @@ export type CreateTeamResponse = TeamResponse
 
 export type GetTeamsQuery = PagedQuery
 
-export type GetTeamsResponse = {
+export type TeamsResponse = {
 	orgTeams: (Team & {
 		userCount: number
+		projectCount: number
 	})[]
 }
+
+export type SearchTeamsQuery = ExtendPagedQuery<
+	MakeOptional<{
+		searchQuery: string
+	}>
+>
