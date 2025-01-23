@@ -39,8 +39,8 @@ export type QueryWorkflowBody = {
 
 export type QueryWorkflowResponse = {
 	queryData: {
-		execQuery: string
-		execContext: string
+		queryResponse: string
+		queryContext: string
 		chatResponse: string
 	}
 }

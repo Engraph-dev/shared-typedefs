@@ -3,10 +3,7 @@ import type { MakeOptional } from "../../../../common"
 
 export type UpdateProjectParams = ProjectId
 export type UpdateProjectBody = MakeOptional<
-	Omit<
-		CreateProjectBody,
-		"projectIdentifier" | "projectSourceType" | "projectBranch"
-	>
+	Omit<CreateProjectBody, "projectIdentifier" | "projectSourceType">
 >
 
 export type DeleteProjectParams = ProjectId

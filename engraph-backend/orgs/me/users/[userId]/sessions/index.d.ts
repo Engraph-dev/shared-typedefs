@@ -1,5 +1,6 @@
 import type { UserId } from ".."
 import type { SessionId } from "../../../sessions/me"
+import type { Session } from "@prisma/client"
 
 export type GetUserSessionsParams = UserId
 
