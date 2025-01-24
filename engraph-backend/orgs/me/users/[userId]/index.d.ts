@@ -1,4 +1,4 @@
-import type { CreateUserBody, CreateUserResponse } from ".."
+import type { CreateUserBody, UserResponse } from ".."
 import type { MakeOptional } from "../../../../common"
 import type { User } from "@prisma/client"
 
@@ -11,5 +11,8 @@ export type UpdateUserBody = MakeOptional<
 >
 
 export type DeleteUserParams = UserId
+export type GetUserParams = UserId
 
-export type UpdateUserResponse = CreateUserResponse
+export type UpdateUserResponse = UserResponse
+
+export type GetUserResponse = UserResponse
