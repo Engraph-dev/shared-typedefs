@@ -1,5 +1,6 @@
-import type { CreateProjectBody, ProjectId } from ".."
+import type { CreateProjectBody, ProjectId, ProjectResponse } from ".."
 import type { MakeOptional } from "../../../../common"
+import type { AccessLevel } from "@prisma/client"
 
 export type UpdateProjectParams = ProjectId
 export type UpdateProjectBody = MakeOptional<
@@ -9,3 +10,7 @@ export type UpdateProjectBody = MakeOptional<
 export type DeleteProjectParams = ProjectId
 
 export type GetProjectParams = ProjectId
+
+export type GetProjectResponse = ProjectResponse & {
+	accessLevel: AccessLevel | null
+}
