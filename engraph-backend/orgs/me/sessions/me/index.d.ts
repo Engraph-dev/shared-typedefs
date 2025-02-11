@@ -1,4 +1,4 @@
-import type { Session, User } from "@prisma/client"
+import type { Org, Session, User } from "@prisma/client"
 
 export type SessionId = Pick<Session, "sessionId">
 

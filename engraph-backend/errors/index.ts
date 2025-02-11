@@ -95,8 +95,12 @@ export const ErrorCodes = {
 	ProjectQuotaExceeded: "E9010",
 	// User Quota Exceeded for Org Plan
 	UserQuotaExceeded: "E9011",
+	// Team Quota Exceeded for Org Plan
+	TeamQuotaExceeded: "E9012",
 	// Project Access Missing
-	ProjectAccessMissing: "E9012",
+	ProjectAccessMissing: "E9013",
+	// Workflow Id is invalid
+	WorkflowIdInvalid: "E9014",
 
 	// Unknown error
 	Unknown: "E9999",
